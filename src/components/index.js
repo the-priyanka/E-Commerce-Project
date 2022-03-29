@@ -1,6 +1,8 @@
 import AddToCart from "./AddToCart";
 import AmountButton from "./AmountButton";
 import CarContent from "./CarContent";
+import CartButtons from "./CartButtons";
+import CartColumns from "./CartColumns";
 import CartItem from "./CartItem";
 import CartTotal from "./CartTotal";
 import Contact from "./Contact";
@@ -27,6 +29,8 @@ export {
   AddToCart,
   AmountButton,
   CarContent,
+  CartButtons,
+  CartColumns,
   CartItem,
   CartTotal,
   Contact,

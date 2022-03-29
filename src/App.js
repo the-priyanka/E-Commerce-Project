@@ -33,7 +33,7 @@ function App() {
           <Cart />
         </Route>
 
-        <Route exact path="/product">
+        <Route exact path="/products">
           <Products />
         </Route>
 
