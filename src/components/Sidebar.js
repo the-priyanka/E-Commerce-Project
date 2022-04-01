@@ -5,7 +5,7 @@ import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
-import { useProductsContext } from "../context/Product_context";
+import { useProductsContext } from "../context/Products_context";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useProductsContext();

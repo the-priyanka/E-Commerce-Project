@@ -2,7 +2,7 @@ import React from "react";
 import { FaShoppingCart, FaUserPlus } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { useProductsContext } from "../context/Product_context";
+import { useProductsContext } from "../context/Products_context";
 
 const CartButtons = () => {
   const { closeSidebar } = useProductsContext();

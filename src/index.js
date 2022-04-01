@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { ProductsProvider } from "./context/Product_context";
+import { ProductsProvider } from "./context/Products_context";
+import { FilterProvider } from "./context/filter_context";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <ProductsProvider>
-    <App />
+    <FilterProvider>
+      <App />
+    </FilterProvider>
   </ProductsProvider>,
   document.getElementById("root")
 );
