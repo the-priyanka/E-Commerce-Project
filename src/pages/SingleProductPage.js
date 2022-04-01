@@ -13,7 +13,7 @@ import {
   ProductImages,
   Stars,
 } from "../components";
-import { useProductsContext } from "../context/Products_context";
+import { useProductsContext } from "../context/products_context";
 import { single_product_url as url } from "../utils/constants";
 import { formatPrice } from "../utils/helpers";
 

@@ -30,7 +30,7 @@ const initialState = {
 };
 
 const ProductsContext = createContext();
-
+ProductsContext.displayName = "ProductsContext";
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 

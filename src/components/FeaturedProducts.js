@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useProductsContext } from "../context/Products_context";
+import { useProductsContext } from "../context/products_context";
 import Error from "./Error";
 import Loading from "./Loading";
 import Product from "./Product";
