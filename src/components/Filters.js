@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useFilterContext } from "../context/filter_context";
+import { getUniqueValues } from "../utils/helpers";
 
 const Filters = () => {
   const {
@@ -16,9 +17,15 @@ const Filters = () => {
     },
     updateFilters,
     clearFilters,
-    all,
-    products,
+    all_products,
   } = useFilterContext();
+
+  const categories = getUniqueValues(all_products, "category");
+  const companies = getUniqueValues(all_products, "companies");
+  const colors = getUniqueValues(all_products, "colors");
+
+  console.log(categories);
+
   return (
     <Wrapper>
       <div className="content">
