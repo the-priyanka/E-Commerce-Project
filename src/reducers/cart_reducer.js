@@ -34,6 +34,7 @@ const cart_reducer = (state, action) => {
         price: product.price,
         max: product.stock,
       };
+      console.log(newItem);
       return { ...state, cart: [...state.cart, newItem] };
     }
   }
