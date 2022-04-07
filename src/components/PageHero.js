@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const PageHero = ({ title, product }) => {
-  console.log({ title, product });
   return (
     <Wrapper>
       <div className="section-center">
