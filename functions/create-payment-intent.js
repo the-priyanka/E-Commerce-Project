@@ -18,6 +18,17 @@ exports.handler = async function (event, context) {
       const paymentIntent = await stripe.paymentIntents.create({
         amount: calculateOrderAmount(),
         currency: "usd",
+        description: "hello",
+        shipping: {
+          name: "Jenny Rosen",
+          address: {
+            line1: "510 Townsend St",
+            postal_code: "98140",
+            city: "San Francisco",
+            state: "CA",
+            country: "US",
+          },
+        },
       });
       return {
         statusCode: 200,
@@ -31,10 +42,6 @@ exports.handler = async function (event, context) {
         body: JSON.stringify({ msg: error.message }),
       };
     }
-    return {
-      statusCode: 200,
-      body: JSON.stringify(cart),
-    };
   }
   return {
     statusCode: 200,
